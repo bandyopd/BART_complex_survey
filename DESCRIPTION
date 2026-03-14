@@ -1,0 +1,25 @@
+Package: complexsurvey
+Title: SBART Models for Clustered Complex Survey Data with Non-Gaussian Errors
+Version: 0.1.0
+Authors@R: person("Abhishek", "Mandal",
+                   email = "amandal2@fsu.edu",
+                   role = c("aut", "cre"))
+Description: Fits Soft Bayesian Additive Regression Trees (SBART) for
+    clustered complex survey data with subject-specific weights and
+    non-Gaussian errors. Implements skew-normal, skew-t, and quantile
+    regression models as described in Mandal et al. (2025)
+    <doi:10.1080/10485252.2025.2574708>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    SoftBart,
+    invgamma,
+    truncnorm,
+    sn,
+    glmnet,
+    extraDistr,
+    ald,
+    loo,
+    diversitree
