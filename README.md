@@ -1,6 +1,6 @@
 # complexsurvey
 
-R package implementing Soft Bayesian Additive Regression Trees (SBART) 
+R package "complexsurvey" implementing Soft Bayesian Additive Regression Trees (SBART) 
 for clustered complex survey data with non-Gaussian errors.
 
 ## Reference
