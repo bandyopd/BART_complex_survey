@@ -35,10 +35,10 @@ devtools::install_github("amandal-stat/complex_survey", force = TRUE)
 library(complexsurvey)
 library(SoftBart)
 
-# Simulate data from skew-normal model
+# Simulate data from the skew-normal model
 dat <- sim_fried_SN(N = 100, P = 5, alpha = 5, sigma = 1, sigma1 = 0.2)
 
-# Fit model
+# Fit the SBART model with Skew-Normal error
 hypers <- Hypers(dat$X, dat$Y, num_tree = 50)
 opts   <- Opts(num_burn = 500, num_save = 500)
 
@@ -48,7 +48,9 @@ fit <- SNSBARTW(X = dat$X, Y = dat$Y, test_X = dat$X,
 
 
 
-## Contact
-Abhishek Mandal — amandal2@fsu.edu  
-Department of Statistics, Florida State University
+### Contact
+Code written by Abhishek Mandal (Florida State University) 
+For questions, please contact Dipankar Bandyopadhyay, PhD
+Department of Biostatistics, Virginia Commonwealth University
+E-mail: dbandyop@vcu.edu 
 
