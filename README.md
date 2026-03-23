@@ -5,13 +5,20 @@ for clustered complex survey data with non-Gaussian errors.
 
 ## Reference
 Mandal A, Linero AR, Bandyopadhyay D, Sinha D (2026). 
-*Soft Bayesian Additive Regression Trees (SBART) for correlated survey 
-response with non-Gaussian error.*
-Journal of Nonparametric Statistics, 38(1), 235–253. 
+Soft Bayesian Additive Regression Trees (SBART) for correlated survey 
+response with non-Gaussian error, 
+*Journal of Nonparametric Statistics*, 38(1), 235–253. 
 DOI: https://doi.org/10.1080/10485252.2025.2574708
 
-
+## Required Packages
+```r
+install.packages(c("rlang", "vctrs", "fs", "devtools", "remotes", "SoftBart", "invgamma", "zeallot", "truncnorm",
+                   "sn", "glmnet", "extraDistr", "ald", "loo", "diversitree"),
+                  repos = "https://cloud.r-project.org",
+                  dependencies = TRUE)
+```
 ## Installation
+
 ```r
 devtools::install_github("amandal-stat/complex_survey")
 ```
@@ -21,11 +28,7 @@ devtools::install_github("amandal-stat/complex_survey")
 - `TSBARTW()`  — SBART with Skew-t errors (heavy-tailed)
 - `QRSBARTW()` — SBART Quantile Regression via Asymmetric Laplace Distribution
 
-## Required Packages
-```r
-install.packages(c("SoftBart", "invgamma", "zeallot", "truncnorm",
-                   "sn", "glmnet", "extraDistr", "ald", "loo", "diversitree"))
-```
+
 
 ## Quick Example
 ```r
