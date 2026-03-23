@@ -18,9 +18,9 @@ install.packages(c("rlang", "vctrs", "fs", "devtools", "remotes", "SoftBart", "i
                   dependencies = TRUE)
 ```
 ## Installation
-
+You need to have Rtools 45 pre-installed in your computer
 ```r
-devtools::install_github("amandal-stat/complex_survey")
+devtools::install_github("amandal-stat/complex_survey", force = TRUE)
 ```
 
 ## Models
